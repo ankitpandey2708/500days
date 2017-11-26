@@ -1,0 +1,162 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* /////////////// Main CSS ////////////// */
+#main-c {
+width: 0px;           
+margin: 5px auto;    
+position:absolute;   
+font-family: Helvetica, Arial, sans-serif;
+
+}
+
+#info-c {
+
+position:absolute;
+width: 405px;
+padding: 1px 0px;
+text-align: center;
+opacity: 1;
+}
+
+#day {
+font-size: 3em;
+padding-bottom: 5px;
+-webkit-transition: opacity 0.5s;
+-moz-transition: opacity 0.5s;
+-o-transition: opacity 0.5s;
+transition: opacity 0.5s;
+}
+
+#day > span {
+color: #A5AAD9;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-o-transition: 0.5s;
+transition: 0.5s;
+}
+
+#place {
+font-size: 1.25em;
+-webkit-transition: opacity 1s;
+-moz-transition: opacity 1s;
+-o-transition: opacity 1s;
+transition: opacity 1s;
+color: #bbb;
+}
+
+#quote {
+	padding: 0.5em 0;
+	opacity: 0;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+#quote pre {
+	font-size: 1.25em;
+	font-style: italic;
+	font-family: Georgia;
+	display:inline-block;
+	background: "#A5AAD9";
+	color: #eee;
+	padding: 0.75em 1em;
+	line-height: 1.25em;
+}
+
+
+#splash {
+position:absolute;
+top: -150px; /*15*/
+left: 1005px; /*0*/
+width: 300px;
+
+padding: 150px 20px 20px 20px;
+
+text-align:center;
+
+opacity: 1;
+-webkit-transition: opacity 0.5s;
+-moz-transition: opacity 0.5s;
+-o-transition: opacity 0.5s;
+transition: opacity 0.5s;
+}
+#splash h2 {
+background: rgba(20,80,220,0.4);
+color: #eee;
+font-family: Georgia, serif;
+font-size: 1.25em;
+padding: 0.5em 0;
+}
+
+#splash em{
+
+font-style: italic;
+}
+
+#splash button {
+margin: 0;
+}
+
+#splash button {
+background: #eee;
+border: 2px solid #ccc;
+padding: 0.5em 1em;
+margin: 1em 0 0 0;
+color: #111;
+font-weight: bold;
+border-radius: 2px;
+}
+#splash button:hover {
+background: #fff;
+border-color: #aaa;
+color: #000;
+}
+#screen {
+	visibility: hidden;
+	position:absolute;
+	z-index: -1;
+	top:0;
+}
